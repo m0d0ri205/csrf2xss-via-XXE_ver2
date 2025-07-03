@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8000:13680"
+    volumes:
+      - ./app:/app/app
+    restart: unless-stopped
+    

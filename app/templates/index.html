@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wargame</title>
+    <meta charset="UTF-8">
+    <title>CTF Main</title>
 </head>
 <body>
-    <h1>Welcome to CSRF → XXE → XSS Wargame</h1>
-    <p>Try sending your profile update!</p>
-    <form action="/profile/update" method="POST">
-        <textarea name="profileXML" rows="10" cols="60">
-<profile>
-  <name>Test</name>
-</profile>
-        </textarea><br>
-        <input type="submit" value="Update Profile">
-    </form>
+    <h1>Welcome to CSRF-XXE-XSS Challenge</h1>
+    <ul>
+        <li><a href="/flag">Go to flag page</a></li>
+        <li><a href="/memo">View memo</a></li>
+        <li><a href="/upload_xml">Upload XML</a></li>
+    </ul>
 </body>
 </html>

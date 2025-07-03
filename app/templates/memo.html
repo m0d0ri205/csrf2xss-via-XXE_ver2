@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memo</title>
+</head>
+<body>
+    <h2>Memo Board</h2>
+    <form action="/memo" method="get">
+        <input type="text" name="memo" placeholder="Write something...">
+        <button type="submit">Submit</button>
+    </form>
+    <h3>All Memos</h3>
+    <pre>{{ memo }}</pre>
+</body>
+</html>
