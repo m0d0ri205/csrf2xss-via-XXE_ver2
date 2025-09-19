@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: dockerfile
     ports:
-      - "8000:13680"
+      - "8000:{port}"
     volumes:
       - ./app:/app/app
     restart: unless-stopped
